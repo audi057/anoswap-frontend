@@ -7,6 +7,14 @@ const StyledLink = styled(Link)`
     cursor: pointer;
 `
 
+const StyledFooter = styled(CardFooter)`
+  background: url('/images/referral/background.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  min-height: 256px;
+`
+
 const ReferralLink = () => {
     const [link, setLink] = useState("https://anoswap.finance/?ref=dwprorr4ywoktgyg3kmnrnors3j3dkvqmkvncdowj")
     const [text, setText] = useState("Copy");
@@ -52,9 +60,9 @@ const ReferralLink = () => {
                     <StyledButton onClick={onClick}>{text}</StyledButton>
                 </Container>
             </CardBody>
-            <CardFooter>
+            <StyledFooter>
                 <StyledLink>{link}</StyledLink>
-            </CardFooter>
+            </StyledFooter>
         </Card>
     )
 }

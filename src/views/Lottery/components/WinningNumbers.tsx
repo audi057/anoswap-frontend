@@ -7,6 +7,13 @@ import useI18n from 'hooks/useI18n'
 import useGetLotteryHasDrawn from 'hooks/useGetLotteryHasDrawn'
 import Divider from './Divider'
 
+const StyledFooter = styled(CardFooter)`
+  background: url('/images/lottery/background.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+`
+
 const WinningNumbers: React.FC = () => {
   const { account } = useWallet()
   const winNumbers = useWinningNumbers()
@@ -31,7 +38,7 @@ const WinningNumbers: React.FC = () => {
             </StyledCardHeader>
           </StyledCardContentInner>
         </CardBody>
-        <CardFooter>
+        <StyledFooter>
           <StyledCardContentInner>
             <Row>
               {winNumbers.map((number, index) => (
@@ -67,7 +74,7 @@ const WinningNumbers: React.FC = () => {
             </Link>
           </StyledCardContentInner>
           <br />
-        </CardFooter>
+        </StyledFooter>
       </Card>
     </CardWrapper>
   )
