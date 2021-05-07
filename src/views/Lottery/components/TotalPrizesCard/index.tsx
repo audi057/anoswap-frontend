@@ -78,7 +78,7 @@ const TotalPrizesCard = () => {
               <Text fontSize="14px" color="primary">
                 {TranslateString(999, 'Total Pot:')}
               </Text>
-              <Heading size="lg">{lotteryPrizeWithCommaSeparators} CAKE</Heading>
+              <Heading size="lg">{lotteryPrizeWithCommaSeparators} ANO</Heading>
             </PrizeCountWrapper>
           </Left>
           <Right>

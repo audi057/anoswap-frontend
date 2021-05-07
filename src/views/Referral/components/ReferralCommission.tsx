@@ -8,7 +8,7 @@ const ReferralCommission = () => {
                 <Text>Total Referral Commissions</Text>
             </CardBody>
             <CardFooter>
-                <Text>0.0000 PANTHER</Text>
+                <Text>0.0000 ANO</Text>
             </CardFooter>
         </Card>
     )

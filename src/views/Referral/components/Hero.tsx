@@ -5,10 +5,11 @@ import useI18n from 'hooks/useI18n'
 import Container from 'components/layout/Container'
 
 const Title = styled(Heading).attrs({ as: 'h1', size: 'xl' })`
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.secondary};
   margin-bottom: 24px;
   font-size: 24px;
 `
+
 
 const Blurb = styled(Text)`
   color: #ffffff;
@@ -44,7 +45,7 @@ const Hero = () => {
   return (
     <StyledHero>
       <StyledContainer>
-        <Title>{TranslateString(999, 'The CAKE Lottery')}</Title>
+        <Title>{TranslateString(999, 'ANOSWAP Referral Program')}</Title>
         <Blurb>{TranslateString(999, `Share the referral link below to invite your friends and earn 1% of your friends' earnings FOREVER!`)}</Blurb>
       </StyledContainer>
     </StyledHero>

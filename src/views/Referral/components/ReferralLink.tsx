@@ -8,7 +8,7 @@ const StyledLink = styled(Link)`
 `
 
 const ReferralLink = () => {
-    const [link, setLink] = useState("https://pantherswap.com/?ref=dwprorr4ywoktgyg3kmnrnors3j3dkvqmkvncdowj")
+    const [link, setLink] = useState("https://anoswap.finance/?ref=dwprorr4ywoktgyg3kmnrnors3j3dkvqmkvncdowj")
     const [text, setText] = useState("Copy");
 
     const StyledButton = styled(Button)`

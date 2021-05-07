@@ -42,7 +42,7 @@ const config: MenuEntry[] = [
   },
   {
     label: 'Referral',
-    icon: 'TicketIcon',
+    icon: 'GroupsIcon',
     href: '/referral',
   },
   // {
