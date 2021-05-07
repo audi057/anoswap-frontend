@@ -28,6 +28,27 @@ const Farm: React.FC = () => {
   const bnbPriceUSD = usePriceBnbBusd()
   const block = useBlock()
 
+  const Hero = styled.div`
+    align-items: center;
+    background-image: url('/images/ano/3.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 32px;
+    padding-top: 116px;
+    text-align: center;
+
+    ${({ theme }) => theme.mediaQueries.lg} {
+      background-image: url('/images/ano/3.png'), url('/images/ano/3b.png');
+      background-position: left center, right center;
+      height: 165px;
+      padding-top: 0;
+    }
+  `
+
   const priceToBnb = (tokenName: string, tokenPrice: BigNumber, quoteToken: QuoteToken): BigNumber => {
     const tokenPriceBN = new BigNumber(tokenPrice)
     if (tokenName === 'BNB') {

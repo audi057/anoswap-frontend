@@ -11,6 +11,7 @@ import Page from 'components/layout/Page'
 import { useFarms, usePriceBnbBusd, usePriceCakeBusd } from 'state/hooks'
 import useRefresh from 'hooks/useRefresh'
 import { fetchFarmUserDataAsync } from 'state/actions'
+import styled from 'styled-components'
 import { QuoteToken } from 'config/constants/types'
 import useI18n from 'hooks/useI18n'
 import FarmCard, { FarmWithStakedValue } from './components/FarmCard/FarmCard'
@@ -32,6 +33,27 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   const dispatch = useDispatch()
   const { fastRefresh } = useRefresh()
+
+  const Hero = styled.div`
+  align-items: center;
+  background-image: url('/images/ano/3.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 32px;
+  padding-top: 116px;
+  text-align: center;
+
+  ${({ theme }) => theme.mediaQueries.lg} {
+    background-image: url('/images/ano/3.png'), url('/images/ano/3b.png');
+    background-position: left center, right center;
+    height: 165px;
+    padding-top: 0;
+  }
+`
   useEffect(() => {
     if (account) {
       dispatch(fetchFarmUserDataAsync(account))
@@ -91,18 +113,20 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   return (
     <Page>
-      <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
-        {
-          tokenMode ?
-            TranslateString(10002, 'Stake tokens to earn EGG')
-            :
-          TranslateString(320, 'Stake LP tokens to earn EGG')
-        }
-      </Heading>
-      <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-        {TranslateString(10000, 'Deposit Fee will be used to buyback EGG')}
-      </Heading>
-      <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly}/>
+      <Hero>
+        <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
+          {
+            tokenMode ?
+              TranslateString(10002, 'Stake tokens to earn ANO')
+              :
+            TranslateString(320, 'Stake LP tokens to earn ANO')
+          }
+        </Heading>
+        <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
+          {TranslateString(10000, 'Deposit Fee will be used to buyback ANO')}
+        </Heading>
+        <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly}/>
+      </Hero>
       <div>
         <Divider />
         <FlexLayout>
@@ -114,7 +138,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           </Route>
         </FlexLayout>
       </div>
-      <Image src="/images/egg/8.png" alt="illustration" width={1352} height={587} responsive />
+      <Image src="/images/ano/8.png" alt="illustration" width={1352} height={587} responsive />
     </Page>
   )
 }
