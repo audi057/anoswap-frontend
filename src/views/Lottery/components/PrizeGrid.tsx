@@ -33,6 +33,10 @@ const PastDrawGridItem = styled(GridItem)`
   transform: translate(-40%, 0%);
 `
 
+const StyledPrimaryText = styled(Text)`
+  color: ${({ theme }) => theme.colors.secondary};
+`
+
 const PrizeGrid: React.FC<PrizeGridProps> = ({
   lotteryPrizeAmount = 0,
   pastDraw = false,
@@ -49,19 +53,19 @@ const PrizeGrid: React.FC<PrizeGridProps> = ({
   return (
     <Grid pastDraw={pastDraw}>
       <GridItem>
-        <Text fontSize="14px" color="textSubtle">
+        <Text fontSize="14px" color="primary">
           {TranslateString(999, 'No. Matched')}
         </Text>
       </GridItem>
       {pastDraw && (
         <PastDrawGridItem>
-          <RightAlignedText fontSize="14px" color="textSubtle">
+          <RightAlignedText fontSize="14px" color="primary">
             {TranslateString(999, 'Winners')}
           </RightAlignedText>
         </PastDrawGridItem>
       )}
       <GridItem>
-        <RightAlignedText fontSize="14px" color="textSubtle">
+        <RightAlignedText fontSize="14px" color="primary">
           {TranslateString(999, 'Prize Pot')}
         </RightAlignedText>
       </GridItem>
