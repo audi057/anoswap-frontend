@@ -37,7 +37,7 @@ const config: MenuEntry[] = [
   // },
   {
     label: 'Jungles',
-    icon: 'VaultsIcon',
+    icon: 'PoolIcon',
     href: '/jungles',
   },
   {
