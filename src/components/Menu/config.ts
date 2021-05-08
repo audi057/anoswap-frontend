@@ -55,25 +55,73 @@ const config: MenuEntry[] = [
   //   icon: 'NftIcon',
   //   href: '/nft',
   // },
+  // {
+  //   label: 'Info',
+  //   icon: 'InfoIcon',
+  //   items: [
+  //     {
+  //       label: 'PancakeSwap',
+  //       href: 'https://pancakeswap.info/token/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
+  //     },
+  //     {
+  //       label: 'CoinGecko',
+  //       href: 'https://www.coingecko.com/en/coins/goose-finance',
+  //     },
+  //     {
+  //       label: 'CoinMarketCap',
+  //       href: 'https://coinmarketcap.com/currencies/goose-finance/',
+  //     },
+  //     {
+  //       label: 'AstroTools',
+  //       href: 'https://app.astrotools.io/pancake-pair-explorer/0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
+  //     },
+  //   ],
+  // },
   {
-    label: 'Info',
+    label: 'Price Charts',
     icon: 'InfoIcon',
     items: [
       {
-        label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
+        label: 'DexGuru',
+        href: 'https://dex.guru/token/0x1f546ad641b56b86fd9dceac473d1c7a357276b7-bsc',
+      },
+      {
+        label: 'PooCoin',
+        href: 'https://poocoin.app/tokens/0x1f546ad641b56b86fd9dceac473d1c7a357276b7',
+      },
+      {
+        label: 'BoggedFinance',
+        href: 'https://charts.bogged.finance/?token=0x1f546aD641B56b86fD9dCEAc473d1C7a357276B7',
+      },
+      {
+        label: 'DexTools',
+        href: 'https://www.dextools.io/app/pancakeswap/pair-explorer/0xecc11a78490866e0073ebc4a4dcb6f75673c8685',
+      },
+    ],
+  },
+  {
+    label: 'Listings',
+    icon: 'NftIcon',
+    items: [
+      {
+        label: 'BscScan',
+        href: 'https://bscscan.com/token/0x1f546ad641b56b86fd9dceac473d1c7a357276b7',
+      },
+      {
+        label: 'DappRadar',
+        href: 'https://dappradar.com/binance-smart-chain/defi/pantherswap',
       },
       {
         label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/goose-finance',
+        href: 'https://www.coingecko.com/en/coins/pantherswap',
       },
       {
-        label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/goose-finance/',
+        label: 'LiveCoinWatch',
+        href: 'https://www.livecoinwatch.com/price/PantherSwap-PANTHER',
       },
       {
-        label: 'AstroTools',
-        href: 'https://app.astrotools.io/pancake-pair-explorer/0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
+        label: 'Vfat',
+        href: 'https://vfat.tools/bsc/panther',
       },
     ],
   },
