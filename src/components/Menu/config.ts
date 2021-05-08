@@ -36,6 +36,11 @@ const config: MenuEntry[] = [
   //   href: '/pools',
   // },
   {
+    label: 'Jungles',
+    icon: 'VaultsIcon',
+    href: '/jungles',
+  },
+  {
     label: 'Lottery',
     icon: 'TicketIcon',
     href: '/lottery',
@@ -51,11 +56,33 @@ const config: MenuEntry[] = [
   //   href: '/nft',
   // },
   {
-    label: 'Info',
+    label: 'Price Charts',
     icon: 'InfoIcon',
     items: [
       {
-        label: 'PancakeSwap',
+        label: 'DexGuru',
+        href: 'https://pancakeswap.info/token/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
+      },
+      {
+        label: 'PooCoin',
+        href: 'https://www.coingecko.com/en/coins/goose-finance',
+      },
+      {
+        label: 'BoggedFinance',
+        href: 'https://coinmarketcap.com/currencies/goose-finance/',
+      },
+      {
+        label: 'DexTools',
+        href: 'https://app.astrotools.io/pancake-pair-explorer/0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
+      },
+    ],
+  },
+  {
+    label: 'Info',
+    icon: 'AuditIcon',
+    items: [
+      {
+        label: 'PpanancakeSwap',
         href: 'https://pancakeswap.info/token/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
       },
       {
