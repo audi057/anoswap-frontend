@@ -36,6 +36,11 @@ const config: MenuEntry[] = [
   //   href: '/pools',
   // },
   {
+    label: 'Jungles',
+    icon: 'VaultsIcon',
+    href: '/jungles',
+  },
+  {
     label: 'Lottery',
     icon: 'TicketIcon',
     href: '/lottery',
@@ -95,16 +100,12 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Listings',
-    icon: 'NftIcon',
+    label: 'Info',
+    icon: 'AuditIcon',
     items: [
       {
-        label: 'BscScan',
-        href: 'https://bscscan.com/token/0x1f546ad641b56b86fd9dceac473d1c7a357276b7',
-      },
-      {
-        label: 'DappRadar',
-        href: 'https://dappradar.com/binance-smart-chain/defi/pantherswap',
+        label: 'PpanancakeSwap',
+        href: 'https://pancakeswap.info/token/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
       },
       {
         label: 'CoinGecko',

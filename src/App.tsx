@@ -15,6 +15,7 @@ const Home = lazy(() => import('./views/Home'))
 const Farms = lazy(() => import('./views/Farms'))
 const Lottery = lazy(() => import('./views/Lottery'))
 const Referral = lazy(() => import('./views/Referral'))
+const Jungles = lazy(() => import('./views/Jungles'))
 // const Pools = lazy(() => import('./views/Pools'))
 // const Ifos = lazy(() => import('./views/Ifos'))
 const NotFound = lazy(() => import('./views/NotFound'))
@@ -50,13 +51,16 @@ const App: React.FC = () => {
               <Farms />
             </Route>
             <Route path="/pools">
-              <Farms tokenMode/>
+              <Farms tokenMode />
             </Route>
             {/* <Route path="/pools"> */}
             {/*  <Pools /> */}
             {/* </Route> */}
             <Route path="/lottery">
               <Lottery />
+            </Route>
+            <Route path="/jungles">
+              <Jungles />
             </Route>
             <Route path="/referral">
               <Referral />
