@@ -16,6 +16,7 @@ const Farms = lazy(() => import('./views/Farms'))
 const Lottery = lazy(() => import('./views/Lottery'))
 const Referral = lazy(() => import('./views/Referral'))
 const Jungles = lazy(() => import('./views/Jungles'))
+const Comingsoon = lazy(() => import('./views/comingsoon'))
 // const Pools = lazy(() => import('./views/Pools'))
 // const Ifos = lazy(() => import('./views/Ifos'))
 const NotFound = lazy(() => import('./views/NotFound'))
@@ -64,6 +65,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/referral">
               <Referral />
+            </Route>
+            <Route path="/comingsoon">
+              <Comingsoon />
             </Route>
             {/* <Route path="/ifo"> */}
             {/*  <Ifos /> */}

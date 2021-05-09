@@ -36,7 +36,7 @@ const config: MenuEntry[] = [
   //   href: '/pools',
   // },
   {
-    label: 'Jungles',
+    label: 'Your project',
     icon: 'PoolIcon',
     href: '/jungles',
   },
@@ -131,15 +131,19 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/goosedefi/',
+        href: 'https://github.com/AnoSwap/',
       },
       {
         label: 'Docs',
-        href: 'https://goosedefi.gitbook.io/goose-finance/',
+        href: 'https://app.gitbook.com/@anoswap/s/anonymousswap-finance/whitepaper/',
       },
       {
         label: 'Blog',
-        href: 'https://goosefinance.medium.com/',
+        href: 'https://anoswap.medium.com/',
+      },
+      {
+        label: 'Voting',
+        href: '/comingsoon',
       },
     ],
   },
