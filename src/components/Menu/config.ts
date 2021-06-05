@@ -36,6 +36,11 @@ const config: MenuEntry[] = [
   //   href: '/pools',
   // },
   {
+    label: 'Leveraged farming',
+    icon: 'PoolIcon',
+    href: '/comingsoon',
+  },
+  {
     label: 'Your project',
     icon: 'PoolIcon',
     href: '/jungles',

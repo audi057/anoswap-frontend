@@ -63,7 +63,7 @@ const YourPoject = () => {
                 </Row>
                 <Row>
                     <Text>Your Stake:</Text>
-                    <Text>??? PANTHER</Text>
+                    <Text>??? ANO</Text>
                 </Row>
             </CardBody>
             <CardFooter>
